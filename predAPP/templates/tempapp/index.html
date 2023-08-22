@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA House Price Prediction</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        .form1 {
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding:20px;
+            height: auto;
+            border-radius:5% ;
+            background-color: burlywood;
+            position: absolute;
+        }
+        .population,.noBedR,.noOfroms,.noBedR,.population,.HouseAge
+        {
+            padding: 5px;
+        }
+        #predict
+        {
+            position: relative;
+            margin-left: 37%;
+            margin-top:1em;
+           
+            
+        }
+        .head
+        {
+            position: fixed;
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            left: 0;
+            top:0;
+            align-items: center;
+            position: absolute;
+        }
+        .head h1{
+            position: relative;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="head">
+        <h1>Usa House Price Pridction Project </h1>
+    </nav>
+    <div class="form1">
+        <form action="predicted">
+            <div class="table">
+                <div class="areaIncome">
+                    <label for="Area_income">Avg Area Income</label><br>
+                    <input type="text" placeholder="Avg Area Income" name="arIncomeIn">
+                </div>
+                <div class="HouseAge">
+                    <label for="house_age">Avg Area House Age</label><br>
+                    <input type="text" placeholder="Avg Area House age" name="houseAgeIn">
+                </div>
+                <div class="noOfroms">
+                    <label for="no_rooms">Avg no of rooms</label><br>
+                    <input type="text" placeholder="Avg no of rooms" name="noOfRoomsIn">
+                </div>
+                <div class="noBedR">
+                    <label for="no_beds">Avg no of bed rooms</label><br>
+                    <input type="text" placeholder="Avg no of bedRooms rooms" name="noBedRIn">
+                </div>
+                <div class="population">
+                    <label for="area_population">Avg area Population</label><br>
+                    <input type="text" placeholder="Avg area Population" name="populationIn">
+                </div>
+                <input id="predict" type="submit" value="Predict">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

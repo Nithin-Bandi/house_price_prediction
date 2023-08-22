@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(122, 245, 228);
+        }
+        .table
+        {
+
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding:15px;
+            height: auto;
+            background-color: #973f6b;
+            border-radius: 5%;
+        }
+        .areaIncome,.HouseAge,.noOfroms,.noBedR,.population,.predicted
+        {
+            padding: 10px;
+        }
+        .head
+        {
+            position: fixed;
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            left: 0;
+            top:0;
+            align-items: center;
+            position: absolute;
+            
+        }
+         h1
+        {
+            position: relative;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Machine Learning Model Prediction</h1>
+    </div>
+    <div class="table">
+        <div class="areaIncome">
+            <span id="arIncomeLa"><label for="Area_income">Avg Area Income : {{areaIncome}}</label></span>
+            <!-- <span id="arIncomeIn"><input type="text" placeholder="Avg Area Income"></span> -->
+        </div>
+        <div class="HouseAge">
+            <span id="houseAgeLa"><label for="house_age">Avg Area House Age : {{houseAge}}</label></span>
+            <!-- <span id="houseAgeIn"><input type="text" placeholder="Avg Area House age"></span> -->
+        </div>
+        <div class="noOfroms">
+            <span id="noOfRoomsLa"><label for="no_rooms">Avg no of rooms : {{noOfRooms}}</label></span>
+            <!-- <span id="noOfRoomsIn"><input type="text" placeholder="Avg no of rooms"></span> -->
+        </div>
+        <div class="noBedR">
+            <span id="noBedRLa"><label for="no_beds">Avg no of bed rooms :  {{no_beds}}</label></span>
+            <!-- <span id="noBedRIn"><input type="text" placeholder="Avg no of bedRooms rooms"></span> -->
+        </div>
+        <div class="population">
+            <span id="populationLa"><label for="no_beds">Avg area Population : {{avgPopul}}</label></span>
+            <!-- <span id="populationIn"><input type="text" placeholder="Avg no of bedRooms rooms"></span> -->
+        </div>
+
+        <div class="predicted">
+            <span><label for="predictedValue">Your house price may be {{predictVal}}</label></span>
+        </div>
+    
+</body>
+</html>
